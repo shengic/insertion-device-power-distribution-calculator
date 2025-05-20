@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=big5">
+    <title>3D ID power density distribution calculator</title>
+    <script language="javascript">AC_FL_RunContent = 0;</script>
+    <script src="js/AC_RunActiveContent.js"></script>
+    <script src="js/hashtable.js"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="js/graph3d.js"></script>
+  </head>
+  <body class="oneColFixCtr">
+    <div id="container">
+      <div id="mainContent">
+        <table align="center" cellspacing="0" cellpadding="0" bordercolor="#000000"
+          border="0" bgcolor="#FFFFFF">
+          <tbody>
+            <tr>
+              <td colspan="5">
+               </script><br>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="5" align="center">
+                <div id="dreamweaver_design_view_show" style="display:none;width:547px;height:21px;">Infinite
+                  Menus Place Holder (Dreamweaver Design View)</div>
+                <div id="dreamweaver_design_view_hide"> </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="5" align="center" valign="middle"> <b>Insertion
+                  device power density distribution profile </b>
+                <dl style="text-align: right;">
+                  Version 2.0 <br>
+                  by Albert Sheng
+                </dl>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="5" align="center" valign="middle" bgcolor="#FFFFFF">
+                <table style="width: 726px; height: 424px;" border="1">
+                  <tbody>
+                    <tr>
+                      <td border="1" width="400" valign="top">
+                        <form id="thisForm">
+                          <script>
+id201 = new HashTable({name: 'U15' ,periodLength: 1.5, Nperiod: 131,  totalLength: 1.97,  kx: 0, ky: 1.47105})
+id402 = new HashTable({name: 'EPU50' ,periodLength: 5, Nperiod: 37,  totalLength: 1.85,  kx: 2.802, ky: 3.736})
+id403 = new HashTable({name: 'QEPU90' ,periodLength: 9, Nperiod: 19,  totalLength: 1.71,  kx: 6.55668, ky: 9.91908})
+id501 = new HashTable({name: 'W114' ,periodLength: 11.4, Nperiod: 29,  totalLength: 3.31,  kx: 0, ky: 20.65634})
+id601 = new HashTable({name: 'U30' ,periodLength: 3, Nperiod: 50,  totalLength: 1.5,  kx: 0, ky: 4.203})
+id602 = new HashTable({name: 'EPU35' ,periodLength: 3.5, Nperiod: 52.5,  totalLength: 1.84,  kx: 0, ky: 2.32099})
+id701 = new HashTable({name: 'COSMIC EPU38 ' ,periodLength: 3.8, Nperiod: 38,  totalLength: 1.44,  kx: 2.44895, ky: 3.15879})
+id702 = new HashTable({name: 'MAESTRO EPU70 ' ,periodLength: 7, Nperiod: 26.5,  totalLength: 1.85,  kx: 3.98818, ky: 7.71484})
+id801 = new HashTable({name: 'Tender U90' ,periodLength: 1.9, Nperiod: 209,  totalLength: 3.97,  kx: 0, ky: 2.18276})
+id901 = new HashTable({name: 'U100' ,periodLength: 10, Nperiod: 43,  totalLength: 4.3,  kx: 0, ky: 9.1532})
+id1001old = new HashTable({name: 'U100 (old)' ,periodLength: 10, Nperiod: 43,  totalLength: 4.3,  kx: 0, ky: 9.1532})
+id1001linear = new HashTable({name: 'FLEXON (linear)' ,periodLength: 3.8, Nperiod: 104,  totalLength: 3.95,  kx: 0, ky: 3.47822})
+id1001helical = new HashTable({name: 'FLEXON (helical)' ,periodLength: 3.8, Nperiod: 104,  totalLength: 3.95,  kx: 2.15436, ky: 2.15436})
+id1001vertical = new HashTable({name: 'FLEXON (vertical)' ,periodLength: 3.8, Nperiod: 104,  totalLength: 3.95,  kx: 2.73288, ky: 0})
+id100145degree = new HashTable({name: 'FLEXON (45 degree)' ,periodLength: 3.8, Nperiod: 104,  totalLength: 3.95,  kx: 0, ky: 2.16501})
+id1101 = new HashTable({name: 'EPU50' ,periodLength: 5, Nperiod: 36.5,  totalLength: 1.82,  kx: 0, ky: 3.9695})
+id1102 = new HashTable({name: 'EPU50' ,periodLength: 5, Nperiod: 37,  totalLength: 1.85,  kx: 2.7086, ky: 4.0162})
+id1201 = new HashTable({name: 'U80' ,periodLength: 8, Nperiod: 55,  totalLength: 4.4,  kx: 0, ky: 5.9776})
+
+//alert('value of total length :' + id1201.getItem('totalLength'));
+</script> <p id="idName"></p>
+                          <input name="thisRadio" value="2.0.1" onclick="selectID(this, id201)"
+                            type="radio">2.0.1 U15<br>
+                          <input name="thisRadio" value="4.0.2" onclick="selectID(this, id402)"
+                            type="radio">4.0.2 EPU50<br>
+                          <input name="thisRadio" value="4.0.3" onclick="selectID(this, id403)"
+                            type="radio">4.0.3 QEPU90<br>
+                          <input name="thisRadio" value="5.0.1" onclick="selectID(this, id501)"
+                            type="radio">5.0.1 W114<br>
+                          <input name="thisRadio" value="6.0.1" onclick="selectID(this, id601)"
+                            type="radio">6.0.1 U30<br>
+                          <input name="thisRadio" value="6.0.2" onclick="selectID(this, id602)"
+                            type="radio">6.0.2 EPU35<br>
+                          <input name="thisRadio" value="7.0.1" onclick="selectID(this, id701)"
+                            type="radio">7.0.1 COSMIC EPU38 <br>
+                          <input name="thisRadio" value="7.0.2" onclick="selectID(this, id702)"
+                            type="radio">7.0.2 MAESTRO EPU70 <i>(ALS-U)</i><br>
+                          <input name="thisRadio" value="8.0.1" onclick="selectID(this, id801)"
+                            type="radio">8.0.1 Tender U90 <i>(ALS-U)</i><br>
+                          <input name="thisRadio" value="9.0.1" onclick="selectID(this, id901)"
+                            type="radio">9.0.1 U100<br>
+                          <input name="thisRadio" value="10.0.1" onclick="selectID(this, id1001old)"
+                            type="radio">10.0.1 U100 (old)<br>
+                          <input name="thisRadio" value="10.0.1" onclick="selectID(this, id1001linear)"
+                            type="radio">10.0.1 FLEXON (linear) <i>(ALS-U)</i><br>
+                          <input name="thisRadio" value="10.0.1" onclick="selectID(this, id1001helical)"
+                            type="radio">10.0.1 FLEXON (helical) <i>(ALS-U)</i><br>
+                          <input name="thisRadio" value="10.0.1" onclick="selectID(this, id1001vertical)"
+                            type="radio">10.0.1 FLEXON (vertical)<i> (ALS-U)</i><br>
+                          <input name="thisRadio" value="10.0.1" onclick="selectID(this, id1001degree)"
+                            type="radio">10.0.1 FLEXON (45 degree) <i>(ALS-U)</i><br>
+                          <input name="thisRadio" value="11.0.1" onclick="selectID(this, id1101)"
+                            type="radio">11.0.1 EPU50<br>
+                          <input name="thisRadio" value="11.0.2" onclick="selectID(this, id1102)"
+                            type="radio">11.0.2 EPU50<br>
+                          <input name="thisRadio" value="12.0.1" onclick="selectID(this, id1201)"
+                            type="radio">12.0.1 U80<br>
+                        </form>
+                        <script>
+
+function selectID(radio,idHash) {
+  if(radio.checked){
+   document.getElementById("idName").innerHTML = idHash.getItem("name"); 
+   powerForm = document.getElementById("powerForm");
+   powerForm.elements["energy"].value = 2;
+   powerForm.elements["current"].value = 500;
+   powerForm.elements["periodLength"].value = idHash.getItem("periodLength");
+   powerForm.elements["N"].value = idHash.getItem("Nperiod");
+   powerForm.elements["Length"].value = idHash.getItem("totalLength");
+   powerForm.elements["kx"].value = idHash.getItem("kx");
+   powerForm.elements["ky"].value = idHash.getItem("ky");
+//   powerForm.elements["powerDensity"].value = 1.;
+//   powerForm.elements["totalPower"].value = 1.;
+
+  } else {
+    document.getElementById("idName").innerHTML = "Tender U90";
+	var idHash = id801;
+   powerForm = document.getElementById("powerForm");
+   powerForm.elements["energy"].value = 2;
+   powerForm.elements["current"].value = 500;
+   powerForm.elements["periodLength"].value = idHash.getItem("periodLength");
+   powerForm.elements["N"].value = idHash.getItem("Nperiod");
+   powerForm.elements["Length"].value = idHash.getItem("totalLength");
+   powerForm.elements["kx"].value = idHash.getItem("kx");
+   powerForm.elements["ky"].value = idHash.getItem("ky");
+//   powerForm.elements["powerDensity"].value = 1.;
+//   powerForm.elements["totalPower"].value = 1.;
+
+  }
+// determine xmax, xmin, ymax, ymin range
+   gamma = 1957. * powerForm.elements["energy"].value /1000. ;
+   var plotRatio = 1.5;
+   xmax = (powerForm.elements["ky"].value + 1. )/gamma * plotRatio;
+   ymax = (powerForm.elements["kx"].value+1)/gamma * plotRatio;
+   powerForm.elements["xmax"].value = xmax.toFixed(3);
+   powerForm.elements["xmin"].value = - powerForm.elements["xmax"].value;
+   powerForm.elements["ymax"].value = ymax.toFixed(3);
+   powerForm.elements["ymin"].value = - powerForm.elements["ymax"].value;
+
+   drawVisualization();
+
+}   
+</script> </td>
+                      <td align="center">
+                        <form id="powerForm">
+                          <table style="width: 400px; height: 311px;" border="1">
+                            <tbody>
+                              <tr>
+                                <td class="shadow2" width="130">Energy </td>
+                                <td class="shadow2" width="130"><label> <input
+                                      name="energy" size="10" id="energy" value="2"
+                                      type="text"> GeV</label></td>
+                              </tr>
+                              <tr>
+                                <td class="shadow2">Beam current </td>
+                                <td class="shadow2"><input name="current" size="10"
+                                    id="current" value="500" type="text"> mA</td>
+                              </tr>
+                              <tr>
+                                <td class="shadow2">Period length</td>
+                                <td class="shadow2"><input name="periodLength" size="10"
+                                    id="periodLength" value="1.9" type="text">
+                                  cm</td>
+                              </tr>
+                              <tr>
+                                <td class="shadow2">Number of period</td>
+                                <td class="shadow2"><input name="N" size="10" id="N"
+                                    value="209" type="text"></td>
+                              </tr>
+                              <tr>
+                                <td class="shadow2">Total length</td>
+                                <td class="shadow2"><input name="Length" size="10"
+                                    id="Length" value="3.97" type="text"></td>
+                              </tr>
+                              <tr>
+                                <td class="shadow2">Kx</td>
+                                <td class="shadow2"><input name="kx" size="10" id="kx"
+                                    value="0" type="text"></td>
+                              </tr>
+                              <tr>
+                                <td class="shadow2">Ky</td>
+                                <td class="shadow2"><input name="ky" size="10" id="ky"
+                                    value="2.18276" type="text"></td>
+                              </tr>
+                              <tr>
+                                <td class="shadow2">Theoretical power density along x axis</td>
+                                <td class="shadow2"><input size="10" name="theoretical_powerDensity_x"
+                                    id="theoretical_powerDensity_x" type="text"> kW/mrad^2</td>
+                              </tr>
+                              <tr>
+                              <tr>
+                                <td class="shadow2">Theoretical power density along y axis</td>
+                                <td class="shadow2"><input size="10" name="theoretical_powerDensity_y"
+                                    id="theoretical_powerDensity_y" type="text"> kW/mrad^2</td>
+                              </tr>
+                              <tr>
+                                <td class="shadow2">Theoretical total power</td>
+                                <td class="shadow2"><input size="10" name="theoretical_totalPower"
+                                    id="theoretical_totalPower" type="text"> kW</td>
+                              </tr>
+                              <tr>
+                                <td class="shadow2">X min <input name="xmin" id="xmin"
+                                    value="-1" size="10" type="text"> mrad</td>
+                                <td class="shadow2">X max <input name="xmax" id="xmax"
+                                    value="1" size="10" type="text"> mrad</td>
+                              </tr>
+                              <tr>
+                                <td class="shadow2">Y min <input name="ymin" id="ymin"
+                                    value="-1" size="10" type="text"> mrad</td>
+                                <td class="shadow2">Y max <input name="ymax" id="ymax"
+                                    value="1" size="10" type="text"> mrad</td>
+                              </tr>
+							                                <tr>
+                                <td class="shadow2">Maximum power density of the regioned area</td>
+                                <td class="shadow2"><input size="10" name="powerDensity"
+                                    id="powerDensity" type="text"> kW/mrad^2</td>
+                              </tr>
+                              <tr>
+                                <td class="shadow2">Total power of the regioned area</td>
+                                <td class="shadow2"><input size="10" name="totalPower"
+                                    id="totalPower" type="text"> kW</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <p> <input name="calculate" onclick="drawVisualization()" value="recalculate" type="button"> </p>
+						  <input name="openWindow" onclick="openDataWindow()" value="Get 3D data" type="button"> </p>
+                        </form>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <script type="text/javascript">
+ function draw3d(){
+      google.setOnLoadCallback(drawVisualization);
+  // Instantiate our graph object.
+        graph = new links.Graph3d(document.getElementById('mygraph'));
+
+  // Draw our graph with the created data and options
+        graph.draw(data, options);
+ }
+
+</script> <script type="text/javascript">
+        var data = null;
+        var graph = null;
+		var htmlData;
+		
+		htmlData = "<html><head></head><body>";
+		
+        google.load("visualization", "1");
+
+        // Set callback to run when API is loaded
+        google.setOnLoadCallback(drawVisualization);
+
+        function custom(x, y) {
+            return (Math.sin(x/50) * Math.cos(y/50) * 50 + 50);
+        }
+
+        // Called when the Visualization API is loaded.
+        function drawVisualization() {
+            // Create and populate a data table.
+            data = new google.visualization.DataTable();
+            data.addColumn('number', 'x (mrad)');
+            data.addColumn('number', 'y (mrad)');
+            data.addColumn('number', 'W/mrad^2');
+
+//            // create some nice looking data with sin/cos
+//            var steps = 50;  // number of datapoints will be steps*steps
+//            var axisMax = 314;
+//            var axisStep = axisMax / steps;
+//            for (var x = 0; x < axisMax; x+=axisStep) {
+//                for (var y = 0; y < axisMax; y+=axisStep) {
+//                    var value = custom(x,y);
+//                    data.addRow([x, y, value]);
+//                }
+//            }
+
+// 20150813 rewrite for EPU power by Albert Sheng
+        var theform = document.getElementById('powerForm');
+        gamma = 1957. * parseFloat(theform.energy.value) /1000. ;
+        kx = parseFloat(theform.kx.value);
+        ky = parseFloat(theform.ky.value);
+ //       var powerDensity =  0.0844 * Math.pow(theform.energy.value, 4) * parseFloat(theform.current.value)/1000. * theform.Length.value /  Math.pow(theform.periodLength.value/100., 2);
+       var powerDensity =  13.44 * Math.pow(10,-4) * Math.pow(theform.energy.value,4)* theform.current.value/1000. * 2.*Math.PI * theform.N.value/theform.periodLength.value;
+       var theoretical_totalPower = 0.633 * Math.pow(theform.energy.value,2) * (Math.pow(theform.kx.value,2) + Math.pow(theform.ky.value,2)) / Math.pow(0.934 * theform.periodLength.value,2) * theform.Length.value * theform.current.value / 1000.;
+	   
+	   var totalPower = 0.;
+	   var maxPowerDensity =0.;
+	   var theoretical_powerDensity_x = 0.;
+	   var theoretical_powerDensity_y = 0.;
+	   
+	   theoretical_powerDensity_x = 0.058*Math.pow(10,4)*Math.pow(theform.energy.value,4)*theform.current.value/1000/Math.pow(theform.periodLength.value,2)*theform.Length.value*theform.kx.value/1000*powerDensityRatio(theform.kx.value,theform.ky.value);
+	   
+	   theoretical_powerDensity_y = 0.058*Math.pow(10,4)*Math.pow(theform.energy.value,4)*theform.current.value/1000/Math.pow(theform.periodLength.value,2)*theform.Length.value*theform.ky.value/1000*powerDensityRatio(theform.kx.value, theform.ky.value);
+	       
+	    if(theoretical_powerDensity_x == 0.){
+		  theoretical_powerDensity_x = theoretical_powerDensity_y;
+		}
+		
+		if(theoretical_powerDensity_y == 0.){
+		  theoretical_powerDensity_y = theoretical_powerDensity_x;
+		}
+		   
+		var steps = 100;
+		var steps = 100;
+		var maxPowerDensity = 0.;
+		var xstep = (parseFloat(theform.xmax.value) - parseFloat(theform.xmin.value))/(steps);
+		var ystep = (parseFloat(theform.ymax.value) - parseFloat(theform.ymin.value))/(steps);
+		var gridArea = xstep*ystep;
+		var xmin = parseFloat(theform.xmin.value);
+		var ymin = parseFloat(theform.ymin.value);
+		var xmax = parseFloat(theform.xmax.value);
+		var ymax = parseFloat(theform.ymax.value);
+		var nbsp = "&nbsp".repeat(10);
+		htmlData += "<table>\n";
+		htmlData += "<tr><td>theta_x (mrad),</td><td>theta_y (mrad), </td><td>power_density (kW/mrad^2)</td><tr>";
+		for(thetax = xmin; thetax < xmax + xstep; thetax += xstep){
+		 for(thetay = ymin; thetay < ymax + ystep; thetay += ystep){
+	//	        var value = custom(thetax,thetay);
+	 		   var value =  powerDensity * getIntegratedShapeFunction(-Math.PI, Math.PI);
+			   data.addRow([thetax, thetay, value]);
+			   htmlData += "<tr><td>" + thetax.toExponential(6) + ",</td><td>" + thetay.toExponential(6) + ",</td><td>" + value.toExponential(6) + "</td></tr>\n";
+			   totalPower += value;
+			   maxPowerDensity = value >= maxPowerDensity ? value : maxPowerDensity; 
+	//		   document.write("[thetax, thetay, value] =" + "[" + thetax + "," + thetay + "," + value + "] <br>");
+		 }
+
+	 }
+//		 alert("max power density = " + maxPowerDensity);
+        htmlData += "</table></body></html>";
+        theform.powerDensity.value = maxPowerDensity.toFixed(3);
+// multiple area to get total power for current region		 
+		 totalPower *= gridArea;
+		 theform.totalPower.value = totalPower.toFixed(3);
+// theoretical power density and total power
+         
+		 theform.theoretical_powerDensity_x.value = theoretical_powerDensity_x.toFixed(3);
+		 theform.theoretical_powerDensity_y.value = theoretical_powerDensity_y.toFixed(3);
+		 theform.theoretical_totalPower.value = theoretical_totalPower.toFixed(3);		 
+
+            // specify options
+            var options = {
+                width:  "600px",
+                height: "400px",
+                style: "surface",
+                showPerspective: true,
+                showGrid: true,
+                showShadow: false,
+                keepAspectRatio: true,
+                verticalRatio: 0.5
+            };
+
+            // Instantiate our graph object.
+             graph = new links.Graph3d(document.getElementById('mygraph'));
+
+            // Draw our graph with the created data and options
+             graph.draw(data, options);
+        }
+
+function powerDensityRatio(kx,ky){
+ var powerDensityRatio = 2;
+ if(kx >0 && ky>0) {
+   powerDensityRatio = 1;
+ }
+ return powerDensityRatio;
+}
+
+function openDataWindow(){
+  var dataWindow = window.open("", "3D data", "width=500, height=800,scrollbars=1,resizable=1");
+  dataWindow.document.open();
+  dataWindow.document.write(htmlData);
+  dataWindow.document.close();
+}
+
+var gamma;
+var kx;
+var ky
+var thetax;
+var thetay ;
+
+ function getIntegratedShapeFunction(a, b){
+   var n = 300;
+   var shape = shapeFunction(a)/2.
+   var step = (b-a)/ n ;
+   for(i=1; i <= n -1; i++ )
+   {
+     var x = a + step*i;
+	 shape += shapeFunction(x);
+   }
+	 shape += shapeFunction(b)/2.;
+// https://en.wikipedia.org/wiki/Numerical_integration
+	 shape = (b-a)/n * shape;
+	 return shape;
+}
+
+
+  function shapeFunction2(x){
+    var shapeFunction = 100.*x;
+	return shapeFunction;
+ }
+
+  function shapeFunction(x){
+      var D = 1. + Math.pow(ky * Math.sin(x) - gamma * thetax, 2) + Math.pow(kx * Math.cos(x) - gamma * thetay, 2);
+	  var shapeFunction = (Math.pow(ky * Math.cos(x),2) + Math.pow(kx * Math.sin(x),2))/Math.pow(D,3) -
+	  Math.pow(((Math.pow(ky,2) - Math.pow(kx,2))*Math.sin(2.*x) -
+	  2.*ky*gamma*thetax*Math.cos(x) + 
+	  2.*kx*gamma*thetay*Math.sin(x)),2)/ Math.pow(D, 5);
+//	  document.write("(x,shapefunction)=" + x + "," + shapeFunction + "<br>" );
+	  return shapeFunction;
+
+  }	
+
+	</script>
+                <div id="mygraph"></div>
+                <br>
+               <!-- <div id="info"><a href="https://als.lbl.gov/disclaimer/">Disclaimer</a></div> -->
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+        <!-- end #mainContent --></div>
+      <!-- end #container --></div>
+  </body>
+  <!-- InstanceEnd -->
+</html>
